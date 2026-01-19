@@ -1,4 +1,4 @@
-  console.log("disable power-save"); // Debug print statement
+console.log("disable power-save"); // Debug print statement
 Bangle.setLCDPower(1);      // keep LCD on
 Bangle.setLCDTimeout(0);    // never auto-dim
 Bangle.setLCDBrightness(1); // optional: full brightness
