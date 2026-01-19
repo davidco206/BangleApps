@@ -7,9 +7,10 @@
   "description": "A timing tool for curling game duration and ice-time used by each team.",
   "tags": "tool,sports,timer",
   "supports": ["BANGLEJS2"],
-  "storage": [
+  "storage": 
+    [
     { "name": "curlingtimer.app.js", "url": "app.js" },
-    { "name": "curlingtimer.img", "url": "icon.png" },
-]
+    { "name": "curlingtimer.img", "url": "icon.png" }
+    ],
   "files": "CurlingTimer.app.js,CurlingTimer.img"
 }
