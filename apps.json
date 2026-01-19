@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "id": "CurlingTimer",
+    "name": "Curling Timer",
+    "icon": "CurlingTimer.png",
+    "type": "app",
+    "files": "CurlingTimer.app.js,CurlingTimer.png"
+  }
+]
