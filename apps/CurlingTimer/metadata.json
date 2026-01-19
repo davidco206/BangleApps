@@ -10,6 +10,7 @@
   "storage": [
     { "name": "CurlingTimer.app.js", "url": "CurlingTimer.app.js" },
     { "name": "CurlingTimer.info",    "url": "CurlingTimer.info" },
+    { "name": "CurlingTimer.img",     "url": "CurlingTimer.png" },
     { "name": "CurlingTimer.png",     "url": "CurlingTimer.png" }
   ]
 }
