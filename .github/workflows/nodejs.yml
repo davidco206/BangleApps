@@ -38,10 +38,7 @@ jobs:
         working-directory: ./typescript
         run: npm run build
 
-      - name: Build App Loader (legacy)
-        run: npm run build
-
-      - name: Upload artifact for GitHub Pages
+      - name: Upload loader folder for GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
           path: loader
