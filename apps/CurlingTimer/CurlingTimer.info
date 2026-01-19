@@ -10,6 +10,6 @@
   "storage": [
     { "name": "curlingtimer.app.js", "url": "app.js" },
     { "name": "curlingtimer.img", "url": "icon.png" },
-
+]
   "files": "CurlingTimer.app.js,CurlingTimer.img"
 }
