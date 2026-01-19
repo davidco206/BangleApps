@@ -205,3 +205,4 @@ Bangle.on('touch', (button, xy) => {
 
 draw();
 
+
