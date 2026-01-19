@@ -100,10 +100,11 @@ function pauseTimer() {
   interval = null;
   activeTimer = null;
 }
-
+/*********************************************************************
 function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
+
 
 function buzzWithDuration(duration) {
   return new Promise(resolve => {
@@ -114,15 +115,13 @@ function buzzWithDuration(duration) {
     }, duration);
   });
 }
-
+*******************************************************/
 function buzzTwice() 
 {
   console.log("buzzTwice: Starting two buzzes with a 250ms delay"); // Debug print statement
-function buzzTwice() {
   Bangle.buzz(300).then(() => new Promise(r => setTimeout(r, 200))).then(()=>Bangle.buzz(300));
 }
 
-}
 
 Bangle.on('touch', (button, xy) => {
   let y = xy.y;
