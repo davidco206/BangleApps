@@ -1,1 +1,15 @@
-
+{
+  "id": "CurlingTimer",
+  "name": "Curling Timer",
+  "type": "app",
+  "icon": "CurlingTimer.img",
+  "version": "0.04",
+  "description": "A timing tool for curling game duration and ice-time used by each team.",
+  "tags": "tool,sports,timer",
+  "supports": ["BANGLEJS2"],
+  "storage": 
+    [
+    { "name": "CurlingTimer.app.js", "url": "CurlingTimer.app.js" },
+    { "name": "CurlingTimer.img", "url": "icon.png" }
+    ] 
+}
