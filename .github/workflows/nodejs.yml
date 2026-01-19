@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: 18.x
 
-      - name: Install testing dependencies
+      - name: Install dependencies
         run: npm ci
 
       - name: Test all apps and widgets
@@ -38,15 +38,13 @@ jobs:
         working-directory: ./typescript
         run: npm run build
 
-      - name: Build App Loader
-        run: |
-          npm run build-apps
-          npm run build
+      - name: Build App Loader (legacy)
+        run: npm run build
 
       - name: Upload artifact for GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: loader
 
   deploy:
     needs: build
