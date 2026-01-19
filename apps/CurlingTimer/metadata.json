@@ -1,0 +1,10 @@
+{
+  "id": "CurlingTimer",
+  "name": "Curling Timer",
+  "type": "app",
+  "icon": "CurlingTimer.png",
+  "version": "0.04",
+  "description": "A curling game timer",
+  "tags": [],
+  "supports": ["BANGLEJS2"]
+}
