@@ -1,0 +1,49 @@
+name: Build and Deploy BangleApps
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repo
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Set up Node (BangleApps uses Node to build apps.json)
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      # Install dependencies (if package.json exists)
+      - name: Install dependencies
+        run: |
+          if [ -f package.json ]; then npm install; fi
+
+      # Build apps.json (this script exists in BangleApps)
+      - name: Build apps.json
+        run: |
+          if [ -f bin/create_apps_json.js ]; then node bin/create_apps_json.js; fi
+
+      # --- GitHub Pages Deployment ---
+
+      # Configure GitHub Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      # Upload the entire repo root as the static site
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      # Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
