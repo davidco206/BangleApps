@@ -5,6 +5,6 @@
   "icon": "CurlingTimer.png",
   "version": "0.04",
   "description": "A curling game timer",
-  "tags": [],
+  "tags": "timers,tools",
   "supports": ["BANGLEJS2"]
 }
