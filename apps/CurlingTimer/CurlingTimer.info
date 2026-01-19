@@ -3,7 +3,7 @@
   "name": "Curling Timer",
   "type": "app",
   "icon": "CurlingTimer.img",
-  "version": "0.03",
+  "version": "0.04",
   "description": "A timing tool for curling game duration and ice-time used by each team.",
   "tags": "tool,sports,timer",
   "supports": ["BANGLEJS2"],
