@@ -38,10 +38,10 @@ jobs:
         working-directory: ./typescript
         run: npm run build
 
-      - name: Upload loader folder for GitHub Pages
+      - name: Upload site root for GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
-          path: loader
+          path: .
 
   deploy:
     needs: build
