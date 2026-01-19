@@ -2,8 +2,8 @@
   {
     "id": "CurlingTimer",
     "name": "Curling Timer",
-    "icon": "CurlingTimer.png",
+    "icon": "icon.png",
     "type": "app",
-    "files": "CurlingTimer.app.js,CurlingTimer.png"
+    "files": "CurlingTimer.app.js,icon.png"
   }
 ]
