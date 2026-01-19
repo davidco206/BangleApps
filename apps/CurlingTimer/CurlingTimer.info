@@ -11,6 +11,5 @@
     [
     { "name": "CurlingTimer.app.js", "url": "app.js" },
     { "name": "CurlingTimer.img", "url": "icon.png" }
-    ],
-  "files": "CurlingTimer.app.js,CurlingTimer.img"
+    ]
 }
