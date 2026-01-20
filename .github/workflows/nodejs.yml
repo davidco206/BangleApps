@@ -41,6 +41,9 @@ jobs:
       - name: Generate apps.json
         run: bin/create_apps_json.sh
 
+      - name: Build App Loader (dev mode)
+        run: APP_SOURCE=dev npm run build
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
