@@ -2,7 +2,7 @@
   "id": "CurlingTimer",
   "name": "Curling Timer",
   "type": "app",
-  "storage": [
-    { "name": "CurlingTimer.app.js", "url": "app.js" }
-  ]
+  "version": "0.01",
+  "src": "CurlingTimer.app.js",
+  "files": "CurlingTimer.app.js"
 }
