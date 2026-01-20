@@ -1,9 +1,10 @@
-[
-  {
-    "id": "CurlingTimer",
-    "name": "Curling Timer",
-    "icon": "icon.png",
-    "type": "app",
-    "files": "CurlingTimer.app.js,icon.png"
-  }
-]
+{
+  "id": "CurlingTimer",
+  "name": "Curling Timer",
+  "type": "app",
+  "version": "0.01",
+  "supports": ["BANGLEJS2"],
+  "storage": [
+    { "name": "CurlingTimer.app.js", "url": "CurlingTimer.app.js" }
+  ]
+}
