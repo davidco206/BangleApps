@@ -4,6 +4,7 @@
   "type": "app",
   "version": "0.01",
   "supports": ["BANGLEJS2"],
+  "icon": "icon.png",
   "storage": [
     { "name": "CurlingTimer.app.js", "url": "CurlingTimer.app.js" }
   ]
