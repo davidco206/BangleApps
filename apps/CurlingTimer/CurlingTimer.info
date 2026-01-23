@@ -1,8 +1,6 @@
-{
-  "id": "CurlingTimer",
-  "name": "Curling Timer",
-  "type": "app",
-  "version": "0.01",
-  "src": "CurlingTimer.app.js",
-  "files": "CurlingTimer.app.js"
-}
+id=CurlingTimer
+name=Curling Timer
+type=app
+version=0.01
+type=custom
+icon=
