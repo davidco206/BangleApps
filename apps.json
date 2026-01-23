@@ -3,9 +3,11 @@
   "name": "Curling Timer",
   "type": "app",
   "version": "0.01",
-  "supports": ["BANGLEJS2"],
-  "icon": "icon.png",
+  "description": "Simple timing app for curling ends.",
+  "icon": "CurlingTimer.img",
+  "supports": [ "BANGLEJS2" ],
   "storage": [
-    { "name": "CurlingTimer.app.js", "url": "CurlingTimer.app.js" }
+    { "name": "CurlingTimer.app.js", "url": "CurlingTimer.app.js" },
+    { "name": "CurlingTimer.img", "url": "icon.png", "convert": "image" }
   ]
 }
