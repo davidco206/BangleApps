@@ -7,6 +7,6 @@
   "supports": [ "BANGLEJS2" ],
   "storage": [
     { "name": "CurlingTimer.app.js", "url": "CurlingTimer.app.js" },
-    { "name": "CurlingTimer.img", "url": "icon.png", "convert": "image" }
+    { "name": "CurlingTimer.img", "url": "CurlingTimer.img" }
   ]
 }
