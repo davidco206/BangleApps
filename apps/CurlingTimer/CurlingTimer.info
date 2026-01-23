@@ -2,5 +2,4 @@ id=CurlingTimer
 name=Curling Timer
 type=app
 version=0.01
-type=custom
-icon=
+icon=CurlingTimer.img
