@@ -1,12 +1,10 @@
 {
   "id": "CurlingTimer",
   "name": "Curling Timer",
-  "type": "app",
-  "version": "0.01",
-  "supports": ["BANGLEJS2"],
-  "icon": "icon.png",
+  "version": "0.04",
+  "description": "Minimal timing app.",
   "storage": [
     { "name": "CurlingTimer.app.js", "url": "CurlingTimer.app.js" },
-    { "name": "CurlingTimer.info",   "url": "CurlingTimer.info" }
+    { "name": "CurlingTimer.img", "url": "CurlingTimer.img" }
   ]
 }
