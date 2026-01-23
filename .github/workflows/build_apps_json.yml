@@ -1,4 +1,4 @@
-name: Build Apps and Loader (Dev Mode)
+name: Build Apps JSON and Deploy
 
 on:
   push:
@@ -13,26 +13,15 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: 18
-
-    - name: Install root dependencies
-      run: npm install
-
     - name: Generate apps.json
       run: |
         chmod +x bin/create_apps_json.sh
         bin/create_apps_json.sh
 
-    - name: Build App Loader (dev mode)
-      run: APP_SOURCE=dev npm run build
-
     - name: Upload site artifact
       uses: actions/upload-pages-artifact@v3
       with:
-        path: ./site
+        path: ./
 
   deploy:
     needs: build
