@@ -4,7 +4,7 @@ Bangle.setLCDTimeout(0);    // never auto-dim
 Bangle.setLCDBrightness(1); // optional: full brightness
 
 
- console.log("buzz pattern dot dash dot"); // Debug print statement
+console.log("buzz pattern dot dash dot"); // Debug print statement
 buzzTwice(); // Buzz Twice at Startup
 
 
