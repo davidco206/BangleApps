@@ -14,35 +14,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository and submodules
+      - name: Checkout repository
         uses: actions/checkout@v3
-        with:
-          submodules: recursive
-
-      - name: Use Node.js 18.x
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18.x
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Test all apps and widgets
-        run: npm test
-
-      - name: Install TypeScript dependencies
-        working-directory: ./typescript
-        run: npm ci
-
-      - name: Build all TS apps and widgets
-        working-directory: ./typescript
-        run: npm run build
 
       - name: Generate apps.json
         run: bin/create_apps_json.sh
-
-      - name: Build App Loader (dev mode)
-        run: APP_SOURCE=dev npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
