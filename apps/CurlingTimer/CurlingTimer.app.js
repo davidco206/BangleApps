@@ -1,3 +1,11 @@
+function buzzTwice() 
+{
+  console.log("buzzTwice: Starting two buzzes with a 250ms delay"); // Debug print statement
+  Bangle.buzz(300).then(() => new Promise(r => setTimeout(r, 200))).then(()=>Bangle.buzz(300));
+}
+
+
+
 console.log("disable power-save"); // Debug print statement
 Bangle.setLCDPower(1);      // keep LCD on
 Bangle.setLCDTimeout(0);    // never auto-dim
